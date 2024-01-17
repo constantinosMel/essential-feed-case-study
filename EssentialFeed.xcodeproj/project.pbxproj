@@ -79,10 +79,18 @@
 		8648935E2B58865D00F99BE9 /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				864893632B58870700F99BE9 /* Feed Feature */,
+			);
+			path = EssentialFeed;
+			sourceTree = "<group>";
+		};
+		864893632B58870700F99BE9 /* Feed Feature */ = {
+			isa = PBXGroup;
+			children = (
 				8648935F2B58866800F99BE9 /* FeedItem.swift */,
 				864893612B58869900F99BE9 /* FeedLoader.swift */,
 			);
-			path = EssentialFeed;
+			path = "Feed Feature";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

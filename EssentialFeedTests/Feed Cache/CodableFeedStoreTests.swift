@@ -8,7 +8,7 @@
 import XCTest
 import EssentialFeed
 
-class CodableFeedStoreTests: XCTestCase {
+class CodableFeedStoreTests: XCTestCase, FailableFeedStoreSpecs {
 
     override func setUp() {
         super.setUp()
@@ -74,9 +74,9 @@ class CodableFeedStoreTests: XCTestCase {
 
     func test_insert_deliversNoErrorOnEmptyCache() {
         let sut = makeSUT()
-        
+
         let insertionError = insert((uniqueImageFeed().local, Date()), to: sut)
-        
+
         XCTAssertNil(insertionError, "Expected to insert cache successfully")
     }
 

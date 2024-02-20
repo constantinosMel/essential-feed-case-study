@@ -231,16 +231,24 @@
 			path = EssentialFeedAPIEndToEndTests;
 			sourceTree = "<group>";
 		};
+		99797EC12B8513E80002E07A /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				99797EBC2B850E1D0002E07A /* CoreDataFeedStore.swift */,
+				99797EBE2B8512900002E07A /* FeedStore.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
 		999347992B7E713F0086DA3E /* Feed Cache */ = {
 			isa = PBXGroup;
 			children = (
+				99797EC12B8513E80002E07A /* Core Data */,
 				9993479A2B7E714E0086DA3E /* LocalFeedLoader.swift */,
 				9993479C2B7E71C80086DA3E /* FeedStore.swift */,
 				999347A02B7E77410086DA3E /* LocalFeedImage.swift */,
 				99F224FC2B7FF58E00D2E185 /* FeedCachePolicy.swift */,
 				99D473122B8406C700BAE42D /* CodableFeedStore.swift */,
-				99797EBC2B850E1D0002E07A /* CoreDataFeedStore.swift */,
-				99797EBE2B8512900002E07A /* FeedStore.xcdatamodeld */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";

@@ -957,7 +957,6 @@
 				999347A32B7E7E3B0086DA3E /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
 				99D4731D2B840F3600BAE42D /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */,
 				99D473152B840C1A00BAE42D /* FeedStoreSpecs.swift in Sources */,
-				864893502B58853200F99BE9 /* EssentialFeedTests.swift in Sources */,
 				99DD2D232B87CEA800725DE4 /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */,
 				99D4731B2B840EE700BAE42D /* XCTestCase+FailableInsertFeedStoreSpecs.swift in Sources */,
 				99DD2D2D2B87D9FD00725DE4 /* CacheFeedImageDataUseCaseTests.swift in Sources */,

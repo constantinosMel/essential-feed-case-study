@@ -52,10 +52,6 @@ class CoreDataFeedImageDataStoreTests: XCTestCase {
         return .success(.none)
     }
 
-    private func anyData() -> Data {
-        return Data("any data".utf8)
-    }
-
     private func localImage(url: URL) -> LocalFeedImage {
         return LocalFeedImage(id: UUID(), description: "any", location: "any", url: url)
     }

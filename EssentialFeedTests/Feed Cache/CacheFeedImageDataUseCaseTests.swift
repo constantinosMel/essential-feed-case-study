@@ -66,10 +66,6 @@ class CacheFeedImageDataUseCaseTests: XCTestCase {
         return (sut, store)
     }
 
-    private func anyData() -> Data {
-        return Data("any data".utf8)
-    }
-
     private func failed() -> LocalFeedImageDataLoader.SaveResult {
         return .failure(LocalFeedImageDataLoader.SaveError.failed)
     }

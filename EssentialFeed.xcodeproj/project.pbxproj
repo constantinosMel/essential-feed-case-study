@@ -124,6 +124,7 @@
 		99F101052B8A7BDB00C65F35 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F1010C2B8A7BDC00C65F35 /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99F1011A2B8A7C2D00C65F35 /* EssentialFeediOS.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeediOS.xctestplan; sourceTree = "<group>"; };
+		99F1011C2B8A7E3900C65F35 /* CI_iOS_test.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = CI_iOS_test.xctestplan; path = CI_iOS/CI_iOS_test.xctestplan; sourceTree = SOURCE_ROOT; };
 		99F224FC2B7FF58E00D2E185 /* FeedCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCachePolicy.swift; sourceTree = "<group>"; };
 		99FF23882B7FEEC700A536A1 /* FeedCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCacheTestHelpers.swift; sourceTree = "<group>"; };
 		99FF238A2B7FEF5100A536A1 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
@@ -199,7 +200,8 @@
 				8648934E2B58853200F99BE9 /* EssentialFeedTests */,
 				992107BD2B6C50D0001E49F9 /* EssentialFeedAPIEndToEndTests */,
 				9951A64F2B851C5F003C8110 /* EssentialFeedCacheIntegrationTests */,
-				86A18DB42B6C623A000687FD /* CI */,
+				86A18DB42B6C623A000687FD /* CI_macOS */,
+				995A4C432B8A80A600C7277E /* CI_iOS */,
 				99F101062B8A7BDB00C65F35 /* EssentialFeediOS */,
 				99F101102B8A7BDC00C65F35 /* EssentialFeediOSTests */,
 				864893432B58853200F99BE9 /* Products */,
@@ -259,12 +261,12 @@
 			path = "Feed API";
 			sourceTree = "<group>";
 		};
-		86A18DB42B6C623A000687FD /* CI */ = {
+		86A18DB42B6C623A000687FD /* CI_macOS */ = {
 			isa = PBXGroup;
 			children = (
 				992107C72B6C53F0001E49F9 /* CI_test_plan.xctestplan */,
 			);
-			path = CI;
+			path = CI_macOS;
 			sourceTree = "<group>";
 		};
 		86C50C1E2B588F12003CD864 /* Feed API */ = {
@@ -302,6 +304,14 @@
 				9951A6502B851C5F003C8110 /* EssentialFeedCacheIntegrationTests.swift */,
 			);
 			path = EssentialFeedCacheIntegrationTests;
+			sourceTree = "<group>";
+		};
+		995A4C432B8A80A600C7277E /* CI_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				99F1011C2B8A7E3900C65F35 /* CI_iOS_test.xctestplan */,
+			);
+			path = CI_iOS;
 			sourceTree = "<group>";
 		};
 		99797EC12B8513E80002E07A /* Core Data */ = {
@@ -947,7 +957,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kmeletiou.EssentialFeed.EssentialFeedAPIEndToEndTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "macosx iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -964,7 +974,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kmeletiou.EssentialFeed.EssentialFeedAPIEndToEndTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "macosx iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -981,7 +991,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kmeletiou.EssentialFeed.EssentialFeedCacheIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "macosx iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
@@ -998,7 +1008,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kmeletiou.EssentialFeed.EssentialFeedCacheIntegrationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "macosx iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};

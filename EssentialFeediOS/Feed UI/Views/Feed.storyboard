@@ -77,6 +77,9 @@
                                                             <state key="normal" title="↻">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="gLH-8i-4Gb" eventType="touchUpInside" id="5ZW-rD-Wz8"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -117,6 +120,14 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="dMe-3B-msJ" secondAttribute="bottom" priority="999" constant="6" id="sMV-Z4-ENv"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="P6b-GF-7kc" id="OyZ-ZN-PXq"/>
+                                    <outlet property="feedImageContainer" destination="LUP-Lk-mp0" id="aNe-9A-sc6"/>
+                                    <outlet property="feedImageRetryButton" destination="njT-Vs-Kq7" id="iQD-MB-7q4"/>
+                                    <outlet property="feedImageView" destination="wT1-bX-P1j" id="22s-Yv-6zU"/>
+                                    <outlet property="locationContainer" destination="my5-fr-ett" id="aTh-Gt-9PT"/>
+                                    <outlet property="locationLabel" destination="veW-LL-Fv5" id="U74-T7-wbv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

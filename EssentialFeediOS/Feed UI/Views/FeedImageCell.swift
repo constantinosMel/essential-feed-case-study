@@ -24,7 +24,7 @@ public final class FeedImageCell: UITableViewCell {
 
     public override func prepareForReuse() {
         super.prepareForReuse()
-
+        
         onReuse?()
     }
 }

@@ -7,10 +7,6 @@
 
 import UIKit
 
-public final class ErrorView: UIView {
-    public var message: String?
-}
-
 public final class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching, FeedErrorView {
     public var refreshController: FeedRefreshViewController?
     @IBOutlet private(set) public var errorView: ErrorView?

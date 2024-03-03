@@ -7,8 +7,14 @@
 
 import UIKit
 
-public final class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching {    
+public final class ErrorView: UIView {
+    public var message: String?
+}
+
+public final class FeedViewController: UITableViewController, UITableViewDataSourcePrefetching {
     public var refreshController: FeedRefreshViewController?
+    public let errorView = ErrorView()
+    
     var tableModel = [FeedImageCellController]() {
         didSet { tableView.reloadData() }
     }

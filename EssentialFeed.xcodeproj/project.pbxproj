@@ -88,7 +88,7 @@
 		99D473192B840E8200BAE42D /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D473182B840E8200BAE42D /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift */; };
 		99D4731B2B840EE700BAE42D /* XCTestCase+FailableInsertFeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D4731A2B840EE700BAE42D /* XCTestCase+FailableInsertFeedStoreSpecs.swift */; };
 		99D4731D2B840F3600BAE42D /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D4731C2B840F3600BAE42D /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */; };
-		99DB336F2B97898D00E62B4B /* RemoteFeedImageDataLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB336E2B97898D00E62B4B /* RemoteFeedImageDataLoaderTests.swift */; };
+		99DB336F2B97898D00E62B4B /* LoadFeedImageDataFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB336E2B97898D00E62B4B /* LoadFeedImageDataFromRemoteUseCaseTests.swift */; };
 		99DB33712B978EF500E62B4B /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB33702B978EF500E62B4B /* HTTPClientSpy.swift */; };
 		99DB33732B978F4400E62B4B /* RemoteFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB33722B978F4400E62B4B /* RemoteFeedImageDataLoader.swift */; };
 		99DB33762B97917700E62B4B /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB33752B97917700E62B4B /* HTTPURLResponse+StatusCode.swift */; };
@@ -257,7 +257,7 @@
 		99D473182B840E8200BAE42D /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableRetrieveFeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		99D4731A2B840EE700BAE42D /* XCTestCase+FailableInsertFeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableInsertFeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		99D4731C2B840F3600BAE42D /* XCTestCase+FailableDeleteFeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableDeleteFeedStoreSpecs.swift"; sourceTree = "<group>"; };
-		99DB336E2B97898D00E62B4B /* RemoteFeedImageDataLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedImageDataLoaderTests.swift; sourceTree = "<group>"; };
+		99DB336E2B97898D00E62B4B /* LoadFeedImageDataFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedImageDataFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
 		99DB33702B978EF500E62B4B /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
 		99DB33722B978F4400E62B4B /* RemoteFeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedImageDataLoader.swift; sourceTree = "<group>"; };
 		99DB33752B97917700E62B4B /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
@@ -414,7 +414,7 @@
 			children = (
 				864893642B58882500F99BE9 /* LoadFeedFromRemoteUseCaseTests.swift */,
 				994154982B68230100D68D8B /* URLSessionHTTPClientTests.swift */,
-				99DB336E2B97898D00E62B4B /* RemoteFeedImageDataLoaderTests.swift */,
+				99DB336E2B97898D00E62B4B /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -975,7 +975,7 @@
 				99DD2D232B87CEA800725DE4 /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */,
 				99D4731B2B840EE700BAE42D /* XCTestCase+FailableInsertFeedStoreSpecs.swift in Sources */,
 				99DD2D2D2B87D9FD00725DE4 /* CacheFeedImageDataUseCaseTests.swift in Sources */,
-				99DB336F2B97898D00E62B4B /* RemoteFeedImageDataLoaderTests.swift in Sources */,
+				99DB336F2B97898D00E62B4B /* LoadFeedImageDataFromRemoteUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

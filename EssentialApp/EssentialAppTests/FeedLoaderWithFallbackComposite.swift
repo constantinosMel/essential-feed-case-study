@@ -6,29 +6,57 @@
 //
 
 import XCTest
+import EssentialFeed
 
-final class FeedLoaderWithFallbackComposite: XCTestCase {
+class FeedLoaderWithFallbackComposite: FeedLoader {
+    private let primary: FeedLoader
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    init(primary: FeedLoader, fallback: FeedLoader) {
+        self.primary = primary
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func load(completion: @escaping (FeedLoader.Result) -> Void) {
+        primary.load(completion: completion)
+    }
+}
+
+class FeedLoaderWithFallbackCompositeTests: XCTestCase {
+
+    func test_load_deliversPrimaryFeedOnPrimaryLoaderSuccess() {
+        let primaryFeed = uniqueFeed()
+        let fallbackFeed = uniqueFeed()
+        let primaryLoader = LoaderStub(result: .success(primaryFeed))
+        let fallbackLoader = LoaderStub(result: .success(fallbackFeed))
+        let sut = FeedLoaderWithFallbackComposite(primary: primaryLoader, fallback: fallbackLoader)
+
+        let exp = expectation(description: "Wait for load completion")
+        sut.load { result in
+            switch result {
+            case let .success(receivedFeed):
+                XCTAssertEqual(receivedFeed, primaryFeed)
+
+            case .failure:
+                XCTFail("Expected successful load feed result, got \(result) instead")
+            }
+
+            exp.fulfill()
+        }
+        wait(for: [exp], timeout: 1)
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    private func uniqueFeed() -> [FeedImage] {
+        return [FeedImage(id: UUID(), description: "any", location: "any", url: URL(string: "http://any-url.com")!)]
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    private class LoaderStub: FeedLoader {
+        private let result: FeedLoader.Result
+
+        init(result: FeedLoader.Result) {
+            self.result = result
+        }
+
+        func load(completion: @escaping (FeedLoader.Result) -> Void) {
+            completion(result)
         }
     }
 

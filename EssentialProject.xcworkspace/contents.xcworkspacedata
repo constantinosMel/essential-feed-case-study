@@ -7,7 +7,4 @@
    <FileRef
       location = "container:EssentialApp/EssentialApp.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:/Users/konstantinosm@kahoot.com/Documents/EssentialFeed_Personal_NEW/EssentialFeed/EssentialApp/EssentialAppUIAcceptanceTests/EssentialAppUIAcceptanceTests.xctestplan">
-   </FileRef>
 </Workspace>

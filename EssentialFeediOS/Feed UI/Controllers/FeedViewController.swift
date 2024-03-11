@@ -67,4 +67,10 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     private func cancelCellControllerLoad(forRowAt indexPath: IndexPath) {
         cellController(forRowAt: indexPath).cancelLoad()
     }
+
+    public override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        tableView.sizeTableHeaderToFit()
+    }
 }

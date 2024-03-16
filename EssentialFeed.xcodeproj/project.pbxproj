@@ -373,6 +373,7 @@
 				99BD5DA32B6AFD72008BF084 /* Helpers */,
 				8619FBEF2B758D000083E5C0 /* Feed Cache */,
 				865775C42B5F1CB700AF1B13 /* Feed API */,
+				993942F32BA649E3004845F1 /* Shared API Infra */,
 				9988165B2B952D65004AE969 /* Feed Presentation */,
 			);
 			path = EssentialFeedTests;
@@ -385,6 +386,7 @@
 				999347992B7E713F0086DA3E /* Feed Cache */,
 				864893632B58870700F99BE9 /* Feed Feature */,
 				86C50C1E2B588F12003CD864 /* Feed API */,
+				993942F22BA6496D004845F1 /* Shared API Infra */,
 				998816672B9531BB004AE969 /* Feed Presentation */,
 			);
 			path = EssentialFeed;
@@ -406,7 +408,6 @@
 			isa = PBXGroup;
 			children = (
 				864893642B58882500F99BE9 /* LoadFeedFromRemoteUseCaseTests.swift */,
-				994154982B68230100D68D8B /* URLSessionHTTPClientTests.swift */,
 				99DB336E2B97898D00E62B4B /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
 				993942ED2BA6438D004845F1 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
 			);
@@ -426,9 +427,7 @@
 			children = (
 				99DB33742B97917100E62B4B /* Helpers */,
 				86C50C1F2B588F29003CD864 /* RemoteFeedLoader.swift */,
-				865775C02B5F18D000AF1B13 /* HTTPClient.swift */,
 				865775C22B5F191500AF1B13 /* FeedItemsMapper.swift */,
-				99BD5DA62B6B07B1008BF084 /* URLSessionHTTPClient.swift */,
 				9993479E2B7E76E60086DA3E /* RemoteFeedItem.swift */,
 				99DB33722B978F4400E62B4B /* RemoteFeedImageDataLoader.swift */,
 				993942E92BA6433A004845F1 /* ImageCommentsMapper.swift */,
@@ -452,6 +451,25 @@
 				993942F02BA648AC004845F1 /* ImageComment.swift */,
 			);
 			path = "Image Comments Feature";
+			sourceTree = "<group>";
+		};
+		993942F22BA6496D004845F1 /* Shared API Infra */ = {
+			isa = PBXGroup;
+			children = (
+				99BD5DA62B6B07B1008BF084 /* URLSessionHTTPClient.swift */,
+				865775C02B5F18D000AF1B13 /* HTTPClient.swift */,
+			);
+			path = "Shared API Infra";
+			sourceTree = "<group>";
+		};
+		993942F32BA649E3004845F1 /* Shared API Infra */ = {
+			isa = PBXGroup;
+			children = (
+				99DB33772B9791BF00E62B4B /* URLProtocolStub.swift */,
+				994154982B68230100D68D8B /* URLSessionHTTPClientTests.swift */,
+				99DB33702B978EF500E62B4B /* HTTPClientSpy.swift */,
+			);
+			path = "Shared API Infra";
 			sourceTree = "<group>";
 		};
 		9951A6422B8519F9003C8110 /* Infrastructure */ = {
@@ -606,8 +624,6 @@
 			children = (
 				99BD5DA42B6AFD91008BF084 /* XCTestCase+MemoryLeakTracking.swift */,
 				99FF238A2B7FEF5100A536A1 /* SharedTestHelpers.swift */,
-				99DB33702B978EF500E62B4B /* HTTPClientSpy.swift */,
-				99DB33772B9791BF00E62B4B /* URLProtocolStub.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";

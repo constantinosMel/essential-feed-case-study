@@ -371,7 +371,6 @@
 			isa = PBXGroup;
 			children = (
 				992107B72B6C4EB4001E49F9 /* EssentialFeed_test_plan.xctestplan */,
-				99BD5DA32B6AFD72008BF084 /* Helpers */,
 				993942F52BA64A6C004845F1 /* Image Comments API */,
 				8619FBEF2B758D000083E5C0 /* Feed Cache */,
 				865775C42B5F1CB700AF1B13 /* Feed API */,
@@ -459,7 +458,6 @@
 			isa = PBXGroup;
 			children = (
 				99BD5DA62B6B07B1008BF084 /* URLSessionHTTPClient.swift */,
-				865775C02B5F18D000AF1B13 /* HTTPClient.swift */,
 			);
 			path = "Shared API Infra";
 			sourceTree = "<group>";
@@ -494,6 +492,7 @@
 		993942F62BA775CD004845F1 /* Shared API */ = {
 			isa = PBXGroup;
 			children = (
+				865775C02B5F18D000AF1B13 /* HTTPClient.swift */,
 				993942F72BA775E7004845F1 /* RemoteLoader.swift */,
 			);
 			path = "Shared API";
@@ -502,6 +501,7 @@
 		993942F92BA7761D004845F1 /* Shared API */ = {
 			isa = PBXGroup;
 			children = (
+				99BD5DA32B6AFD72008BF084 /* Helpers */,
 				993942FA2BA77624004845F1 /* RemoteLoaderTests.swift */,
 			);
 			path = "Shared API";

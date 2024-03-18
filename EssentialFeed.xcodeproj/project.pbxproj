@@ -59,6 +59,9 @@
 		998D40472BA8E745002078FE /* SharedLocalizationTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998D40462BA8E745002078FE /* SharedLocalizationTestHelpers.swift */; };
 		998D40492BA8F3F9002078FE /* ResourceLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998D40482BA8F3F9002078FE /* ResourceLoadingView.swift */; };
 		998D404B2BA8F477002078FE /* ResourceErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998D404A2BA8F477002078FE /* ResourceErrorView.swift */; };
+		998D404E2BA90251002078FE /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FF238A2B7FEF5100A536A1 /* SharedTestHelpers.swift */; };
+		998D404F2BA90260002078FE /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BD5DA42B6AFD91008BF084 /* XCTestCase+MemoryLeakTracking.swift */; };
+		998D40502BA9026A002078FE /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BD5DA42B6AFD91008BF084 /* XCTestCase+MemoryLeakTracking.swift */; };
 		9993479B2B7E714E0086DA3E /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9993479A2B7E714E0086DA3E /* LocalFeedLoader.swift */; };
 		9993479D2B7E71C80086DA3E /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9993479C2B7E71C80086DA3E /* FeedStore.swift */; };
 		999347A12B7E77410086DA3E /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999347A02B7E77410086DA3E /* LocalFeedImage.swift */; };
@@ -1037,6 +1040,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				992107BF2B6C50D0001E49F9 /* EssentialFeedAPIEndToEndTests.swift in Sources */,
+				998D40502BA9026A002078FE /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1045,7 +1049,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9951A6512B851C5F003C8110 /* EssentialFeedCacheIntegrationTests.swift in Sources */,
+				998D404F2BA90260002078FE /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				99BAAF7A2B86781F004539B0 /* FeedCacheTestHelpers.swift in Sources */,
+				998D404E2BA90251002078FE /* SharedTestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

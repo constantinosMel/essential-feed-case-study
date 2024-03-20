@@ -79,7 +79,7 @@
 		99B93DA12B8BEAB300B9F68E /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 864893422B58853200F99BE9 /* EssentialFeed.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		99B93DA82B8BF12A00B9F68E /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 864893422B58853200F99BE9 /* EssentialFeed.framework */; platformFilter = ios; };
 		99B93DA92B8BF12A00B9F68E /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 864893422B58853200F99BE9 /* EssentialFeed.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		99B93DAF2B8BF19B00B9F68E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B93DAE2B8BF19B00B9F68E /* FeedViewController.swift */; };
+		99B93DAF2B8BF19B00B9F68E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B93DAE2B8BF19B00B9F68E /* ListViewController.swift */; };
 		99B93DB02B8BF1EB00B9F68E /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F101052B8A7BDB00C65F35 /* EssentialFeediOS.framework */; };
 		99B93DB12B8BF1EB00B9F68E /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99F101052B8A7BDB00C65F35 /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		99BAAF7A2B86781F004539B0 /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FF23882B7FEEC700A536A1 /* FeedCacheTestHelpers.swift */; };
@@ -256,7 +256,7 @@
 		99B7650A2B8CFC1800D34C7C /* FeedRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRefreshViewController.swift; sourceTree = "<group>"; };
 		99B7650C2B8D009300D34C7C /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
 		99B93DA72B8BF07800B9F68E /* EssentialFeediOSTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeediOSTests.xctestplan; sourceTree = "<group>"; };
-		99B93DAE2B8BF19B00B9F68E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		99B93DAE2B8BF19B00B9F68E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		99BD5DA42B6AFD91008BF084 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		99BD5DA62B6B07B1008BF084 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		99D473142B840C1A00BAE42D /* FeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreSpecs.swift; sourceTree = "<group>"; };
@@ -695,7 +695,7 @@
 		99B764F42B8CF80900D34C7C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				99B93DAE2B8BF19B00B9F68E /* FeedViewController.swift */,
+				99B93DAE2B8BF19B00B9F68E /* ListViewController.swift */,
 				99B7650A2B8CFC1800D34C7C /* FeedRefreshViewController.swift */,
 				99B7650C2B8D009300D34C7C /* FeedImageCellController.swift */,
 			);
@@ -1106,7 +1106,7 @@
 				99B764EF2B8CF1F400D34C7C /* UIView+Shimmering.swift in Sources */,
 				992C41582B9138A2007F1820 /* UIImageView+Animations.swift in Sources */,
 				995F629A2B9F6C2500F849B3 /* UITableView+HeaderSizing.swift in Sources */,
-				99B93DAF2B8BF19B00B9F68E /* FeedViewController.swift in Sources */,
+				99B93DAF2B8BF19B00B9F68E /* ListViewController.swift in Sources */,
 				9988165A2B952B99004AE969 /* UIRefreshControl+Helpers.swift in Sources */,
 				99B764ED2B8CEE6B00D34C7C /* FeedImageCell.swift in Sources */,
 				998816552B952256004AE969 /* ErrorView.swift in Sources */,

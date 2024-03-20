@@ -20,9 +20,7 @@ public final class FeedUIComposer {
     -> ListViewController {
         let presentationAdapter = FeedPresentationAdapter(loader: feedLoader)
         let refreshController = FeedRefreshViewController(delegate: presentationAdapter)
-        let bundle = Bundle(for: ListViewController.self)
-        let storyboard = UIStoryboard(name: "Feed", bundle: bundle)
-        let feedController = storyboard.instantiateInitialViewController() as! ListViewController
+        let feedController = makeFeedViewController(title: FeedPresenter.title)
         feedController.refreshController = refreshController
         feedController.title = FeedPresenter.title
 
@@ -32,6 +30,14 @@ public final class FeedUIComposer {
             errorView: WeakRefVirtualProxy(feedController),
             mapper: FeedPresenter.map)
 
+        return feedController
+    }
+
+    private static func makeFeedViewController(title: String) -> ListViewController {
+        let bundle = Bundle(for: ListViewController.self)
+        let storyboard = UIStoryboard(name: "Feed", bundle: bundle)
+        let feedController = storyboard.instantiateInitialViewController() as! ListViewController
+        feedController.title = title
         return feedController
     }
 }

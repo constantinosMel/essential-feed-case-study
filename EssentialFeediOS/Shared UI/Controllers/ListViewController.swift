@@ -23,6 +23,7 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
 
         tableView.prefetchDataSource = self
         refreshControl = refreshController?.view
+        dataSource.defaultRowAnimation = .fade
         tableView.dataSource = dataSource
         configureErrorView()
     }

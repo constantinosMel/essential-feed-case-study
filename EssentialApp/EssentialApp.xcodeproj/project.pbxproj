@@ -10,6 +10,8 @@
 		9906654B2B9E77A3005A2040 /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9906654A2B9E77A3005A2040 /* HTTPClientStub.swift */; };
 		9906654D2B9E77D9005A2040 /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9906654C2B9E77D9005A2040 /* InMemoryFeedStore.swift */; };
 		992433922BA1152700FCF2B3 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992433912BA1152700FCF2B3 /* CombineHelpers.swift */; };
+		993855412BAE006A00CC1DA4 /* CommentsUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993855402BAE006A00CC1DA4 /* CommentsUIIntegrationTests.swift */; };
+		993855432BAE00D100CC1DA4 /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993855422BAE00D100CC1DA4 /* CommentsUIComposer.swift */; };
 		995F62A02B9F72F900F849B3 /* UIView+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995F629F2B9F72F900F849B3 /* UIView+TestHelpers.swift */; };
 		996C53BF2B97DC290045E0B3 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 996C53BD2B97DC290045E0B3 /* EssentialFeed.framework */; };
 		996C53C02B97DC290045E0B3 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 996C53BD2B97DC290045E0B3 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -70,6 +72,8 @@
 		9906654A2B9E77A3005A2040 /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
 		9906654C2B9E77D9005A2040 /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
 		992433912BA1152700FCF2B3 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
+		993855402BAE006A00CC1DA4 /* CommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
+		993855422BAE00D100CC1DA4 /* CommentsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIComposer.swift; sourceTree = "<group>"; };
 		995F629F2B9F72F900F849B3 /* UIView+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TestHelpers.swift"; sourceTree = "<group>"; };
 		996C53BD2B97DC290045E0B3 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		996C53BE2B97DC290045E0B3 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				99951F8A2B9E6E1F00BC3C6E /* FeedUIComposer.swift */,
+				993855422BAE00D100CC1DA4 /* CommentsUIComposer.swift */,
 				99951F872B9E6E1F00BC3C6E /* WeakRefVirtualProxy.swift */,
 				99951F8B2B9E6E2000BC3C6E /* LoadResourcePresentationAdapter.swift */,
 				99951F892B9E6E1F00BC3C6E /* FeedViewAdapter.swift */,
@@ -197,6 +202,7 @@
 				99951F692B9E6BDE00BC3C6E /* SceneDelegateTests.swift */,
 				99951FA52B9E6E5800BC3C6E /* FeedUIIntegrationTests.swift */,
 				99951FA72B9E703000BC3C6E /* FeedAcceptanceTests.swift */,
+				993855402BAE006A00CC1DA4 /* CommentsUIIntegrationTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
@@ -308,6 +314,7 @@
 				992433922BA1152700FCF2B3 /* CombineHelpers.swift in Sources */,
 				99951F8F2B9E6E2000BC3C6E /* WeakRefVirtualProxy.swift in Sources */,
 				99DB33C72B97950F00E62B4B /* ViewController.swift in Sources */,
+				993855432BAE00D100CC1DA4 /* CommentsUIComposer.swift in Sources */,
 				99951F8D2B9E6E2000BC3C6E /* FeedUIComposer.swift in Sources */,
 				99DB33C32B97950F00E62B4B /* AppDelegate.swift in Sources */,
 				99951F912B9E6E2000BC3C6E /* LoadResourcePresentationAdapter.swift in Sources */,
@@ -321,6 +328,7 @@
 			files = (
 				99951FA02B9E6E4400BC3C6E /* ListViewController+TestHelpers.swift in Sources */,
 				99B5E74C2B9A62F9002B7233 /* SharedTestHelpers.swift in Sources */,
+				993855412BAE006A00CC1DA4 /* CommentsUIIntegrationTests.swift in Sources */,
 				99951FA32B9E6E4400BC3C6E /* UIImage+TestHelpers.swift in Sources */,
 				99951FA22B9E6E4400BC3C6E /* FeedUIIntegrationTests+LoaderSpy.swift in Sources */,
 				99951FA12B9E6E4400BC3C6E /* UIControl+TestHelpers.swift in Sources */,

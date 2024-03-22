@@ -20,7 +20,7 @@ public final class CommentsUIComposer {
     ) -> ListViewController {
         let presentationAdapter = FeedPresentationAdapter(loader: commentsLoader)
         let refreshController = FeedRefreshViewController(delegate: presentationAdapter)
-        let feedController = makeFeedViewController(title: FeedPresenter.title)
+        let feedController = makeFeedViewController(title: ImageCommentsPresenter.title)
         feedController.refreshController = refreshController
 
         presentationAdapter.presenter = LoadResourcePresenter(

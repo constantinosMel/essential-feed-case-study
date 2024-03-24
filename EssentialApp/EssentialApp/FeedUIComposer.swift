@@ -15,8 +15,10 @@ public final class FeedUIComposer {
 
     private typealias FeedPresentationAdapter = LoadResourcePresentationAdapter<[FeedImage], FeedViewAdapter>
 
-    public static func feedComposedWith(feedLoader: @escaping () -> AnyPublisher<[FeedImage], Error>,
-                                        imageLoader: @escaping (URL) -> FeedImageDataLoader.Publisher)
+    public static func feedComposedWith(
+        feedLoader: @escaping () -> AnyPublisher<[FeedImage], Error>,
+        imageLoader: @escaping (URL) -> FeedImageDataLoader.Publisher,
+        selection: @escaping (FeedImage) -> Void = { _ in })
     -> ListViewController {
         let presentationAdapter = FeedPresentationAdapter(loader: feedLoader)
         let refreshController = RefreshViewController(delegate: presentationAdapter)
@@ -25,7 +27,10 @@ public final class FeedUIComposer {
         feedController.title = FeedPresenter.title
 
         presentationAdapter.presenter = LoadResourcePresenter(
-            resourceView: FeedViewAdapter(controller: feedController, imageLoader: imageLoader),
+            resourceView: FeedViewAdapter(
+                controller: feedController,
+                imageLoader: imageLoader,
+                selection: selection),
             loadingView: WeakRefVirtualProxy(refreshController),
             errorView: WeakRefVirtualProxy(feedController),
             mapper: FeedPresenter.map)

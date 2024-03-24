@@ -19,7 +19,7 @@ public final class FeedUIComposer {
                                         imageLoader: @escaping (URL) -> FeedImageDataLoader.Publisher)
     -> ListViewController {
         let presentationAdapter = FeedPresentationAdapter(loader: feedLoader)
-        let refreshController = FeedRefreshViewController(delegate: presentationAdapter)
+        let refreshController = RefreshViewController(delegate: presentationAdapter)
         let feedController = makeFeedViewController(title: FeedPresenter.title)
         feedController.refreshController = refreshController
         feedController.title = FeedPresenter.title

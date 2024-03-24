@@ -9,7 +9,7 @@ import UIKit
 import EssentialFeed
 
 public final class ListViewController: UITableViewController, UITableViewDataSourcePrefetching, ResourceErrorView {
-    public var refreshController: FeedRefreshViewController?
+    public var refreshController: RefreshViewController?
     private(set) public var errorView = ErrorView()
 
     private lazy var dataSource: UITableViewDiffableDataSource<Int, CellController> = {

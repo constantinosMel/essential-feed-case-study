@@ -19,7 +19,7 @@ public final class CommentsUIComposer {
         commentsLoader: @escaping () -> AnyPublisher<[ImageComment], Error>
     ) -> ListViewController {
         let presentationAdapter = CommentsPresentationAdapter(loader: commentsLoader)
-        let refreshController = FeedRefreshViewController(delegate: presentationAdapter)
+        let refreshController = RefreshViewController(delegate: presentationAdapter)
         let commentsController = makeCommentsViewController(title: ImageCommentsPresenter.title)
         commentsController.refreshController = refreshController
 

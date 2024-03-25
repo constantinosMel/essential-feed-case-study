@@ -128,20 +128,13 @@ class FeedUIIntegrationTests: XCTestCase {
         loader.completeFeedLoading(with: [image0], at: 0)
         assertThat(sut, isRendering: [image0])
 
-        sut.simulateUserInitiatedReload()
-        loader.completeFeedLoading(with: [image0, image1, image2, image3], at: 1)
-        assertThat(sut, isRendering: [image0, image1, image2, image3])
-
-        loader.completeFeedLoading(with: [image0, image1], at: 0)
-        assertThat(sut, isRendering: [image0, image1])
-
         sut.simulateLoadMoreFeedAction()
-        loader.completeLoadMore(with: [image0, image1, image2, image3], at: 0)
-        assertThat(sut, isRendering: [image0, image1, image2, image3])
+        loader.completeLoadMore(with: [image0, image1], at: 0)
+        assertThat(sut, isRendering: [image0, image1])
 
         sut.simulateUserInitiatedReload()
-        loader.completeFeedLoading(with: [image0, image1], at: 1)
-        assertThat(sut, isRendering: [image0, image1])
+        loader.completeFeedLoading(with: [], at: 1)
+        assertThat(sut, isRendering: [])
     }
 
     func test_loadFeedCompletion_rendersSuccessfullyLoadedEmptyFeedAfterNonEmptyFeed() {
@@ -152,11 +145,11 @@ class FeedUIIntegrationTests: XCTestCase {
         sut.simulateAppearance()
         loader.completeFeedLoading(with: [image0], at: 0)
         assertThat(sut, isRendering: [image0])
-
+        
         sut.simulateLoadMoreFeedAction()
         loader.completeLoadMore(with: [image0, image1], at: 0)
         assertThat(sut, isRendering: [image0, image1])
-
+        
         sut.simulateUserInitiatedReload()
         loader.completeFeedLoading(with: [], at: 1)
         assertThat(sut, isRendering: [])

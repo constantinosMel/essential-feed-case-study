@@ -69,6 +69,10 @@ extension FeedImageCellController: UITableViewDataSource, UITableViewDelegate, U
         delegate.didRequestImage()
     }
 
+    public func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath]) {
+        cancelLoad()
+    }
+
     private func cancelLoad() {
         releaseCellForReuse()
         delegate.didCancelImageRequest()

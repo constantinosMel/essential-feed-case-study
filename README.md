@@ -2,7 +2,7 @@
 
 [![CI-macOS](https://github.com/constantinosMel/essential-feed-case-study/actions/workflows/CI-macOS.yml/badge.svg?branch=main)](https://github.com/constantinosMel/essential-feed-case-study/actions/workflows/CI-macOS.yml)
 
-[![CI-iOS](https://github.com/constantinosMel/essential-feed-case-study/actions/workflows/CI-macOS.yml/badge.svg?branch=main)](https://github.com/constantinosMel/essential-feed-case-study/actions/workflows/CI-iOS.yml)
+[![CI-iOS](https://github.com/constantinosMel/essential-feed-case-study/actions/workflows/CI-iOS.yml/badge.svg?branch=main)](https://github.com/constantinosMel/essential-feed-case-study/actions/workflows/CI-iOS.yml)
 
 ## BDD Specs
 

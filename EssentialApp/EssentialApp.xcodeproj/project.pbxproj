@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9906654B2B9E77A3005A2040 /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9906654A2B9E77A3005A2040 /* HTTPClientStub.swift */; };
-		9906654D2B9E77D9005A2040 /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9906654C2B9E77D9005A2040 /* InMemoryFeedStore.swift */; };
 		992433922BA1152700FCF2B3 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992433912BA1152700FCF2B3 /* CombineHelpers.swift */; };
 		993855412BAE006A00CC1DA4 /* CommentsUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993855402BAE006A00CC1DA4 /* CommentsUIIntegrationTests.swift */; };
 		993855432BAE00D100CC1DA4 /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993855422BAE00D100CC1DA4 /* CommentsUIComposer.swift */; };
@@ -70,7 +69,6 @@
 
 /* Begin PBXFileReference section */
 		9906654A2B9E77A3005A2040 /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
-		9906654C2B9E77D9005A2040 /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
 		992433912BA1152700FCF2B3 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 		993855402BAE006A00CC1DA4 /* CommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
 		993855422BAE00D100CC1DA4 /* CommentsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIComposer.swift; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 				99951F992B9E6E4400BC3C6E /* ListViewController+TestHelpers.swift */,
 				99951F9B2B9E6E4400BC3C6E /* FeedImageCell+TestHelpers.swift */,
 				9906654A2B9E77A3005A2040 /* HTTPClientStub.swift */,
-				9906654C2B9E77D9005A2040 /* InMemoryFeedStore.swift */,
 				995F629F2B9F72F900F849B3 /* UIView+TestHelpers.swift */,
 			);
 			path = Helpers;
@@ -335,7 +332,6 @@
 				99951FA12B9E6E4400BC3C6E /* UIControl+TestHelpers.swift in Sources */,
 				99951F6A2B9E6BDE00BC3C6E /* SceneDelegateTests.swift in Sources */,
 				99951F9E2B9E6E4400BC3C6E /* FeedUIIntegrationTests+Assertions.swift in Sources */,
-				9906654D2B9E77D9005A2040 /* InMemoryFeedStore.swift in Sources */,
 				99951F9C2B9E6E4400BC3C6E /* FeedImageCell+TestHelpers.swift in Sources */,
 				99951F9D2B9E6E4400BC3C6E /* UIRefreshControl+TestHelpers.swift in Sources */,
 				9906654B2B9E77A3005A2040 /* HTTPClientStub.swift in Sources */,

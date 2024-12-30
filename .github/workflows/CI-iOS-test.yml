@@ -3,8 +3,6 @@ name: CI-iOS-test
 # Controls when the action will run
 # Triggers the workflow every 5 minutes and ensures it runs only on the master branch
 on:
-  schedule:
-    - cron: '*/2 * * * *' # Runs every 5 minutes
   push:
     branches: [ master ] # Ensures it runs on the master branch when pushed
   workflow_dispatch: # Allows manual triggering of the workflow
